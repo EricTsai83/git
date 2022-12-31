@@ -25,5 +25,8 @@
 ### git add new_file_name
 ### git commit -m "rename the file"
 
-# 3. Git workflow 示意圖
+# 3. Git workflow 示意圖 
+[Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
+
 ![git_workflow](./Img/git_workflow.png)
+
