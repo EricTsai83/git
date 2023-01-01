@@ -1,0 +1,19 @@
+#!/bin/bash
+
+DIR=$1
+
+tmux new-session -d
+
+tmux split-window -h
+
+tmux select-pane -t 0
+tmux send-keys "cd ${DIR}" C-m
+
+tmux select-pane -t 1
+tmux send-keys "cd ${DIR}" C-m
+tmux send-keys 'wgit' C-m
+
+tmux select-pane -t 0
+tmux send-keys 'clear' C-m
+
+tmux attach

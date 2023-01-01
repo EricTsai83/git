@@ -1,0 +1,3 @@
+#!/bin/sh
+
+watch --color -n 0.5 git log --all --decorate --oneline --graph --color=always
