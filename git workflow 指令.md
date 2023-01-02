@@ -25,7 +25,7 @@
 ### git add new_file_name
 ### git commit -m "rename the file"
 
-# 3. 透過 checkout 語法，搭配 sha1 值，進入到特定暫存區
+# 3. 透過 checkout 進行檔案變更
 `git checkout <sha1>`
 
 * 將儲存庫內 sha1 版本的所有資料取出至工作目錄 (HEAD)
