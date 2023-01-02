@@ -25,8 +25,39 @@
 ### git add new_file_name
 ### git commit -m "rename the file"
 
+# 3. 透過 checkout 語法，搭配 sha1 值，進入到特定暫存區
+`git checkout <sha1>`
+
+* 將儲存庫內 sha1 版本的所有資料取出至工作目錄 (HEAD)
+* 工作目錄會移到 sha1
+
+`git checkout head`
+
+* 將儲存庫內 HEAD 版本的所有資料取出至工作目錄 (HEAD)
+* 工作目錄會移到 (HEAD) => 無作用(工作目錄本來就在 HEAD)
+
+`git checkout <sha1> <file>` or `git checkout <sha1> .`
+
+* 將儲存庫內 sha1 版本的 file 取出至現在的工作目錄(HEAD)
+* 工作目錄的 file 會變成 sha1 版本的
+
+` git reset --hard <sha1>`
+
+* 將工作目錄回復到 sha1 下的狀態 
+
+`git checkout HEAD <file>` or `git checkout -- <file>`
+ 
+`git checkout HEAD .` or `git checkout -- .`
+
+* 將儲存庫內 HEAD 版本的 file 取出至工作目錄
+* 讓工作目錄的 file 變成 HEAD 版本的 (目的是用來還原用的。前提是你沒有做 git add 的動作)
+
+
+
 # 3. Git workflow 示意圖 
 [Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
 
 ![git_workflow](./Img/git_workflow.png)
+
+
 

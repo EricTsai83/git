@@ -1,3 +1,5 @@
+## 前置作業
+用 homebrew 安裝 tmux，並確保 homemade 的terminal 程式，有存在專案中 bin 資料夾下
 ## 1. 變更工作目錄
 `cd ./computer-science/hahow-git`
 
