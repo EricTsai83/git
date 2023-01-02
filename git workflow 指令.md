@@ -1,7 +1,7 @@
 # 1. Git workflow 相關指令
 ## 設定主機的 git 使用者名稱及電子信箱
-* git config --global user.name "kewang"
-* git config --global user.email "eric492718@gmail.com"
+* git config --global user.name "XXXXXX"
+* git config --global user.email "XXXXXXX@gmail.com"
 
 ## git 初始化
 * git init
