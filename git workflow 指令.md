@@ -104,12 +104,16 @@
 A soft reset moves `HEAD` to the specified commit (or the index of the commit compared to `HEAD`), without getting rid of the changes that were introduced on the commits afterward!
 
 Let's say that we don't want to keep the commit 9e78i which added a style.css file, and we also don't want to keep the commit 035cc which added an index.js file. However, we do want to keep the newly added style.css and index.js file! A perfect use case for a soft reset.
+
 ![soft-reset](./Img/Soft-reset.gif)
+
 When typing git status, you'll see that we still have access to all the changes that were made on the previous commits. This is great, as this means that we can fix the contents of these files and commit them again later on!
 
 ## Hard reset
 Sometimes, we don't want to keep the changes that were introduced by certain commits. Unlike a soft reset, we shouldn't need to have access to them any more. Git should simply reset its state back to where it was on the specified commit: this even includes the changes in your working directory and staged files!
+
 ![hard-reset](./Img/hard-reset.gif)
+
 Git has discarded the changes that were introduced on 9e78i and 035cc, and reset its state to where it was on commit ec5be.
 
 # 7. Git workflow 示意圖 
