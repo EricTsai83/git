@@ -98,7 +98,7 @@
 
 * 將 sha1 or branchname 的 commit 作為現在這個分支 HEAD 新的 commit
 
-# 7.Git workflow 示意圖 
+# 7. Git workflow 示意圖 
 [Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
 
 ![git_workflow](./Img/git_workflow.png)
