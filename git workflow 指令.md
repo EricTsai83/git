@@ -58,9 +58,47 @@
 * 將儲存庫內 HEAD 版本的 file 取出至工作目錄
 * 讓工作目錄的 file 變成 HEAD 版本的 (目的是用來還原用的。前提是你沒有做 git add 的動作)
 
+# 4. 將工作拆分成可同時進行的分支
+`git branch <branchname>`
 
+* 將工作目錄 (HEAD) 新增一個分支，名為 <branchname>
 
-# 3. Git workflow 示意圖 
+`git branch <bn> <sha1>`
+
+* 將 sha1 新增一個分支，名為 bn
+
+`git branch -D <branchname>`
+
+* 刪除名為 branchname 的分支(只是刪除名稱而已，對檔案沒有影響)
+
+`git checkout <branchname>`
+
+* 將儲存庫內名為 branchname 分支的所有資料取出至工作目錄 (HEAD)
+* 工作目錄會移至 branchname
+
+`git merge <branchname>`
+
+* 合併已經完成的分支
+
+* 將 branchname 分支合併到工作目錄 (HEAD)
+
+# 5. 解決分支合併時的檔案衝突(相同檔案再不同分支有不同的狀態)
+`git merge --abort` 
+
+* 取消合併
+
+`git commit`
+
+* 修改其中一邊分支的檔案讓它與另一邊分支的檔案一致，然後再打上 commit 語法
+
+# 將某 commit 獨立插入其他分支
+通常是把已發布的分支修正 bug 之後，把同一個 bug 也在其他分支中修復
+
+`git cherry-pick <sha1>`
+
+* 將 sha1 or branchname 的 commit 作為現在這個分支 HEAD 新的 commit
+
+# 5.Git workflow 示意圖 
 [Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
 
 ![git_workflow](./Img/git_workflow.png)
