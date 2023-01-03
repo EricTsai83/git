@@ -105,7 +105,7 @@ A soft reset moves `HEAD` to the specified commit (or the index of the commit co
 
 Let's say that we don't want to keep the commit 9e78i which added a style.css file, and we also don't want to keep the commit 035cc which added an index.js file. However, we do want to keep the newly added style.css and index.js file! A perfect use case for a soft reset.
 
-![soft-reset](./Img/Soft-reset.gif)
+![soft-reset](./Img/soft-reset.gif)
 
 When typing git status, you'll see that we still have access to all the changes that were made on the previous commits. This is great, as this means that we can fix the contents of these files and commit them again later on!
 
