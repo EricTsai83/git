@@ -91,14 +91,14 @@
 
 * 修改其中一邊分支的檔案讓它與另一邊分支的檔案一致，然後再打上 commit 語法
 
-# 將某 commit 獨立插入其他分支
+# 6. 將某 commit 獨立插入其他分支
 通常是把已發布的分支修正 bug 之後，把同一個 bug 也在其他分支中修復
 
 `git cherry-pick <sha1>`
 
 * 將 sha1 or branchname 的 commit 作為現在這個分支 HEAD 新的 commit
 
-# 5.Git workflow 示意圖 
+# 7.Git workflow 示意圖 
 [Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
 
 ![git_workflow](./Img/git_workflow.png)
