@@ -139,10 +139,9 @@
 
 * 可以用來解決用 `git reset -hard <sha1>` 讓某節點後的 commit 在 git log 語法下不見的問題
 
+---
 
-
-
-# 7. Git workflow 示意圖 
+# 9. Git workflow 示意圖 
 [Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
 
 ![git_workflow](./Img/git_workflow.png)
