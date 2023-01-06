@@ -103,6 +103,13 @@
 
 ---
 
+`git rebase <branchname>`
+
+應用場景通常是為了讓 commit log 的線圖可以簡單一點，讓兩個 branchname 在同一個線上
+
+* 用 branchname 做基底，推論到現在的 branchname 需要哪些 commit，並自動 commit 新的修正
+* 這個合併方法很容易遇到檔案衝突，通常是直接用 `git rebase --abort` 放棄
+
 # 5. 解決分支合併時的檔案衝突(相同檔案再不同分支有不同的狀態)
 `git merge --abort` 
 
@@ -141,7 +148,33 @@
 
 ---
 
-# 9. Git workflow 示意圖 
+# 9. 當發生在臨時交辦事項，但目前的工作又還沒到一段落，像將目前的工作存下來，但不想 commit
+`git stash`
+
+* 把目前工作目錄的變更，存放到 git 內部的暫存堆疊
+* 將工作目錄還原至 HEAD 
+
+---
+
+`git stash list`
+
+* 列出目前已經放在暫存推疊的內容(stash ID)
+
+---
+
+`git stash pop`
+
+* 還原暫存堆疊的內容
+* 指定 stash ID EX. `git stash pop stash@{0}`，可以復原特定的操作
+
+---
+
+`git stash drop`
+
+* 刪除暫存堆疊的內容
+
+
+# 10. Git workflow 示意圖 
 [Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
 
 ![git_workflow](./Img/git_workflow.png)
