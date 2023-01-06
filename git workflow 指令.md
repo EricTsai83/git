@@ -110,6 +110,8 @@
 * 用 branchname 做基底，推論到現在的 branchname 需要哪些 commit，並自動 commit 新的修正
 * 這個合併方法很容易遇到檔案衝突，通常是直接用 `git rebase --abort` 放棄
 
+---
+
 # 5. 解決分支合併時的檔案衝突(相同檔案再不同分支有不同的狀態)
 `git merge --abort` 
 
@@ -173,6 +175,7 @@
 
 * 刪除暫存堆疊的內容
 
+---
 
 # 10. Git workflow 示意圖 
 [Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
