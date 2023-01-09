@@ -4,14 +4,20 @@
 * git config --global user.email "XXXXXXX@gmail.com"
 
 ## git 初始化
+* cd ./your/path
 * git init
 
 ## git 保管狀態
 * git status
 
 ## 將檔案放入 git 內，準備被保管
-* 單一檔案加到 git 中保管: git add [file]
-* 所有檔案加到 git 中保管: git add .
+`git add <file>`
+
+* 單一檔案加到 git 中保管
+
+`git add .`
+
+* 所有檔案加到 git 中保管
 
 ## 將被 git 保管的檔案送出，並同時提供註解
 * git commit -m "first time commit"
@@ -177,7 +183,24 @@
 
 ---
 
-# 10. Git workflow 示意圖 
+# 10. 還原 commit
+`git revert <shaㄘ1>`
+
+* 常發生在 sha1 的變更內容錯誤，需要還原的時候
+* git 會用新 commit 做覆蓋
+
+# 11. 找出變更(錯誤)發生的起始 commit
+1. `git bisect start`: 在現在這個 sha1，開始找特定變更的 commit
+2. `git bisect bad` : 標記這個 sha1 有錯誤的 commit
+3. `git checkout <sha1>`: 切到一個沒有錯誤 commit 的 sha1
+4. `git bisect good`: 標記這個 sha1 沒有錯誤的 commit => 此時 head 會自動跳到 good and bad commit 中間的特定 commit 上
+5. 重複 2 or 3 直到出現訊息表示此 sha1 為第一個 bad commit，這就是我們要找到的錯誤起始點
+6. `git bisect reset`: 退出 bisect 模式，並將 head 退回原本最一開始的 commit
+
+* 使用二分搜尋法找出變更的起始點
+* 常用來找出 bug 發生的源頭
+
+# 12. Git workflow 示意圖 
 [Reference](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)
 
 ![git_workflow](./Img/git_workflow.png)
