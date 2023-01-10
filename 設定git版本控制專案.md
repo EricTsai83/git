@@ -3,10 +3,13 @@
 ## 1. 變更工作目錄
 `cd ./computer-science/hahow-git`
 
-## 2. 要使用 git-tree command ，需用底下語法加入環境變數
+## 2. 初始化 git
+`git init`
+
+## 3. 要使用 git-tree command ，需用底下語法加入環境變數
 `export PATH=$PATH:/Users/eric/computer-science/hahow-git/bin`
 
-## 3. 忽略不想被 Git 保管的檔案
+## 4. 忽略不想被 Git 保管的檔案
 1. 從 [gitignore](https://www.toptal.com/developers/gitignore) 網站中找到你要的程式和操作系統中，可以被忽略的檔案
 2. 找出不想 commit 的檔案，EX. 密碼、設定檔等機敏文件
 3. `code .gitignore`：用 vscode 打開 .gitignore 文件
@@ -32,6 +35,7 @@ git remote -v
 
 ## Case 2. 首次下載雲端儲存庫到本地端
 ![git clone by using HTTPS](./Img/git_clone_by_using_HTTPS.png)
+
 `git clone https://github.com/[github uesr name]/[repository name].git`
 
 ## Case 3. 從遠端儲存庫下載最新的資料到本地儲存庫，並且將本地儲存庫的資料取出到工作目錄
