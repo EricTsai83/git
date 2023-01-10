@@ -1,10 +1,16 @@
 ## 前置作業
-用 homebrew 安裝 tmux，並確保 homemade 的terminal 程式，有存在專案中 bin 資料夾下
+用 homebrew 安裝 tmux，並確保 homemade 的 terminal 程式，有存在專案中 bin 資料夾下
 ## 1. 變更工作目錄
 `cd ./computer-science/hahow-git`
 
 ## 2. 要使用 git-tree command ，需用底下語法加入環境變數
 `export PATH=$PATH:/Users/eric/computer-science/hahow-git/bin`
+
+## 3. 忽略不想被 Git 保管的檔案
+[gitignore](https://www.toptal.com/developers/gitignore)
+
+
+
 
 
 ## Case 1. 推送本地端已存在的專案到雲端儲存庫
@@ -38,7 +44,7 @@ git pull 等同於先用 git fetch 再用 git pull
 ## Case 4. 從遠端儲存庫下載最新的資料到本地儲存庫(不直接更新工作目錄)
 `git fetch`
 
-## Case 4. 新建了一個本地端的檔案，並透過 git 上傳到雲端儲存庫，可以用
+## Case 5. 新建了一個本地端的檔案，並透過 git 上傳到雲端儲存庫，可以用
 1. `git add .`
 2. `git commit -m '我是註解'`
 3. `git push`
