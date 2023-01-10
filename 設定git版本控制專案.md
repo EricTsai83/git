@@ -7,7 +7,10 @@
 `export PATH=$PATH:/Users/eric/computer-science/hahow-git/bin`
 
 ## 3. 忽略不想被 Git 保管的檔案
-[gitignore](https://www.toptal.com/developers/gitignore)
+1. 從 [gitignore](https://www.toptal.com/developers/gitignore) 網站中找到你要的程式和操作系統中，可以被忽略的檔案
+2. 找出不想 commit 的檔案，EX. 密碼、設定檔等機敏文件
+3. `code .gitignore`：用 vscode 打開 .gitignore 文件
+4. 將步驟 1, 2 查找到的檔案名稱貼到文件當中，git 就會自動忽略這些檔案
 
 
 
