@@ -29,7 +29,9 @@ git remote -v
 ## 1-3. 查看有沒有新增成功
 `git remote show origin`
 ## 1-4. 將本地端的專案推送上去
-`git push -u origin master`
+`git add .`
+`git commit -m "The first commit."`
+`git push --set-upstream origin main`
 ## 1-5. 輸入帳號密碼
 帳號為GitHub 帳號，密碼為 GitHub 的 Personal access tokens 
 
